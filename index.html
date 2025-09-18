@@ -17,13 +17,33 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      line-height: 1.5;
     }
 
-    .blink {
+    img {
+      margin-bottom: 20px;
+    }
+
+    h1.blink {
       animation: flash 1.5s infinite;
       color: #ffd700; /* Golden blinking text */
       font-weight: bold;
+      font-size: 3rem; /* Large size */
       letter-spacing: 2px;
+      margin: 0;
+    }
+
+    p.welliyum {
+      font-size: 2.5rem; /* Big Welliyum font */
+      font-weight: bold;
+      color: #e67e22; /* Orange color */
+      margin: 10px 0 20px 0;
+    }
+
+    p.info {
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin: 5px 0; /* Small gaps */
     }
 
     @keyframes flash {
@@ -52,16 +72,13 @@
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Welliyum Logo" width="150"><br>
+  <img src="logo.png" alt="Welliyum Logo" width="150">
   <h1 class="blink">OUR WEBSITE IS COMING SOON</h1>
-  <p class="blink"><strong>Welliyum™</strong></p>
-  <p>Delicious moments are on the way</p>
-  <p>
-    Email: <a href="mailto:info@welliyum.com">info@welliyum.com</a><br>
-    Mob: <a href="tel:+919441812455">+91 9441812455</a><br>
-    GSTIN: <a href="https://www.google.com/search?q=36AAECW1767D1ZB" target="_blank">36AAECW1767D1ZB</a><br>
-    CIN: <a href="https://www.google.com/search?q=U46309TS2025PTC200874" target="_blank">U46309TS2025PTC200874</a>
-  </p>
+  <p class="welliyum">Welliyum™</p>
+  <p class="info">Email: <a href="mailto:info@welliyum.com">info@welliyum.com</a></p>
+  <p class="info">Mob: <a href="tel:+919441812455">+91 9441812455</a></p>
+  <p class="info">GSTIN: 36AAECW1767D1ZB</p>
+  <p class="info">CIN: U46309TS2025PTC200874</p>
   <footer>
     © 2025 Welliyum Foods Pvt Ltd™. All rights reserved.
   </footer>
