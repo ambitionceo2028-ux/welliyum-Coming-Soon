@@ -10,38 +10,43 @@
       padding: 0;
       font-family: "Poppins", "Segoe UI", Arial, sans-serif;
       text-align: center;
-      background-color: #ffffff; /* White background */
-      color: #333333; /* Dark gray for readability */
+      background-color: #000000; /* Black background */
+      color: #ffffff; /* White main text */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
+
     .blink {
       animation: flash 1.5s infinite;
-      color: #e67e22; /* Vibrant orange blinking text */
+      color: #ffd700; /* Golden blinking text */
       font-weight: bold;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
     }
+
     @keyframes flash {
       0%, 50%, 100% { opacity: 1; }
       25%, 75% { opacity: 0; }
     }
+
     a {
-      color: #2980b9; /* Bright blue links */
+      color: #1abc9c; /* Turquoise links */
       text-decoration: none;
       font-weight: 500;
     }
+
     a:hover {
-      color: #e74c3c; /* Red glow on hover */
+      color: #e74c3c; /* Red on hover */
       text-decoration: underline;
     }
+
     footer {
       position: absolute;
       bottom: 10px;
       font-size: 0.85rem;
-      color: #7f8c8d; /* Subtle gray for footer */
+      color: #bdc3c7; /* Light gray footer */
       font-style: italic;
     }
   </style>
