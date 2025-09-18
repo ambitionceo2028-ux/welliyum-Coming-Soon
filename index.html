@@ -4,55 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coming Soon | Welliyum Foods</title>
-
-  <!-- External CSS with cache-busting -->
-  <link rel="stylesheet" href="style.css?v=2">
-
   <style>
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       font-family: Arial, sans-serif;
-      background-color: #0a1a44; /* Dark blue */
+      background-color: #064420; /* Dark Green */
       color: white;
     }
     img {
-      width: 200px;
+      width: 180px;
+      max-width: 60%;
       margin-bottom: 20px;
+      transition: transform 0.2s;
+    }
+    img:hover {
+      transform: scale(1.05);
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 1.2rem;
-      margin: 5px 0;
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      font-weight: normal;
     }
-    .contact {
-      margin-top: 20px;
+    p {
       font-size: 1rem;
+      margin: 5px 0;
+      word-break: break-word;
+    }
+    a {
+      color: #FFD700; /* Gold links */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .flash {
+      font-size: 1.2rem;
+      font-weight: bold;
+      animation: fade 2s infinite;
+      color: #FFD700;
+      margin: 15px 0;
+    }
+    @keyframes fade {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    footer {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.1rem; }
+      .flash { font-size: 1rem; }
+      p { font-size: 0.9rem; }
     }
   </style>
 </head>
 <body>
-  <!-- Logo with cache-busting -->
-  <img src="logo.png?v=2" alt="Welliyum Foods Logo">
-  
-  <h1>Coming Soon</h1>
-  <p>Welliyum Foods Private Limited</p>
-  <div class="contact">
-    <p>Email: info@welliyum.com</p>
-    <p>Mobile: +91 9441812455</p>
-  </div>
+  <!-- Clickable logo -->
+  <a href="mailto:info@welliyum.com">
+    <img src="logo.png?v=6" alt="Welliyum Foods Logo">
+  </a>
 
-  <!-- JS with cache-busting -->
-  <script src="script.js?v=2"></script>
+  <h1><a href="mailto:info@welliyum.com">Welliyum™</a></h1>
+  <h2><a href="mailto:info@welliyum.com">Delicious moments are on the way</a></h2>
+
+  <p class="flash"><a href="mailto:info@welliyum.com">OUR WEBSITE COMING SOON</a></p>
+
+  <!-- Contact info -->
+  <p>Email: <a href="mailto:info@welliyum.com">info@welliyum.com</a></p>
+  <p>Mob: <a href="tel:+919441812455">+91 9441812455</a></p>
+  <p><a href="#">GSTIN: 36AAECW1767D1ZB</a></p>
+  <p><a href="#">CIN: U46309TS2025PTC200874</a></p>
+
+  <footer>
+    <a href="mailto:info@welliyum.com">© 2025 Welliyum Foods Pvt Ltd™. All rights reserved.</a>
+  </footer>
 </body>
 </html>
 
