@@ -8,10 +8,10 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       text-align: center;
       background-color: #800000; /* Dark Maroon */
-      color: white;
+      color: #f5f5f5; /* Soft White for readability */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -20,22 +20,25 @@
     }
     .blink {
       animation: flash 1.5s infinite;
+      color: #ffd700; /* Golden text */
     }
     @keyframes flash {
       0%, 50%, 100% { opacity: 1; }
       25%, 75% { opacity: 0; }
     }
     a {
-      color: #ffd700; /* golden clickable links */
+      color: #87cefa; /* Light Sky Blue for links */
       text-decoration: none;
     }
     a:hover {
+      color: #00ffff; /* Aqua highlight */
       text-decoration: underline;
     }
     footer {
       position: absolute;
       bottom: 10px;
       font-size: 0.9rem;
+      color: #dcdcdc;
     }
   </style>
 </head>
