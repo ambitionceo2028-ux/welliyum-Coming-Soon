@@ -3,113 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welliyum™ - Coming Soon</title>
+  <title>Coming Soon | Welliyum Foods</title>
+
+  <!-- External CSS with cache-busting -->
+  <link rel="stylesheet" href="style.css?v=2">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0a1233; /* Dark Blue */
-      color: white;
-      text-align: center;
+      padding: 0;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #0a1a44; /* Dark blue */
+      color: white;
     }
-
-    /* Watermark background */
-    body::before {
-      content: "";
-      background: url("WhatsApp Image 2025-09-17 at 15.59.09.jpeg") no-repeat center center;
-      background-size: cover;
-      opacity: 0.2;  /* Increased to 20% */
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: 0;
-    }
-
-    .content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .logo {
-      font-size: 2.5em;
-      font-weight: bold;
-    }
-
-    .tagline {
-      font-size: 1.2em;
-      color: #e0c36d;
-      margin-top: 8px;
+    img {
+      width: 200px;
       margin-bottom: 20px;
     }
-
-    .coming-soon {
-      font-size: 2em;
-      font-weight: bold;
-      color: #ff9800;
-      animation: flash 1.5s infinite;
-      margin-bottom: 20px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-
-    @keyframes flash {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
+    p {
+      font-size: 1.2rem;
+      margin: 5px 0;
     }
-
     .contact {
-      font-size: 1em;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.85em;
-      color: #ccc;
-      width: 100%;
-    }
-
-    .tm {
-      font-size: 0.5em;
-      vertical-align: super;
+      margin-top: 20px;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <!-- Logo Text -->
-    <div class="logo">Welliyum<span class="tm">™</span></div>
-
-    <!-- Tagline -->
-    <div class="tagline">Delicious moments are on the way</div>
-
-    <!-- Coming Soon Flashing -->
-    <div class="coming-soon">Our Website is Coming Soon</div>
-
-    <!-- Contact Info -->
-    <div class="contact">
-      <p>Email: <a href="mailto:info@welliyum.com" style="color:#ff9800;">info@welliyum.com</a></p>
-      <p>Mob: <a href="tel:+919441812455" style="color:#ff9800;">+91 9441812455</a></p>
-      <p>GSTIN: 36AAECW1767D1ZB</p>
-      <p>CIN: U46309TS2025PTC200874</p>
-    </div>
+  <!-- Logo with cache-busting -->
+  <img src="logo.png?v=2" alt="Welliyum Foods Logo">
+  
+  <h1>Coming Soon</h1>
+  <p>Welliyum Foods Private Limited</p>
+  <div class="contact">
+    <p>Email: info@welliyum.com</p>
+    <p>Mobile: +91 9441812455</p>
   </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    © 2025 Welliyum Foods Pvt Ltd<span class="tm">™</span>. All rights reserved.
-  </div>
+  <!-- JS with cache-busting -->
+  <script src="script.js?v=2"></script>
 </body>
 </html>
-
 
